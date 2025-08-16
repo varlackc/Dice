@@ -147,3 +147,17 @@ class TestCustomSides(unittest.TestCase):
         self.assertEqual(CustomSides(100).side_number, 100)
     def test_die_Type(self):
         self.assertEqual(CustomSides(100).die_Type, "custom_sided")
+class TestNonNumeric(unittest.TestCase):
+    def test_roll(self):
+            # verify an output is present
+        self.assertIsNotNone(NonNumeric(["A","B","C","D","E","F"]).roll())
+    def test_string_output(self):
+        # verify the output is a string
+        self.assertEqual(type(NonNumeric(["A","B","C","D","E","F"]).roll()),type("A"))
+    def test_shake(self):
+        # verify the shake method does not output
+        self.assertIsNone(NonNumeric(["A","B","C","D","E","F"]).shake())
+    def test_sides(self):
+        self.assertEqual(NonNumeric(["A","B","C","D","E","F"]).side_number, len(["A","B","C","D","E","F"]))
+    def test_die_Type(self):
+        self.assertEqual(NonNumeric(["A","B","C","D","E","F"]).die_Type, "non-numeric")
