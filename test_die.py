@@ -26,7 +26,7 @@ class TestD4(unittest.TestCase):
         # verify an output is present
         self.assertIsNotNone(D4().roll())
     def test_low_bound(self):
-            # verify the output does not exceed lower bound
+        # verify the output does not exceed lower bound
         self.assertGreater(D4().roll(),0)
     def test_upper_bound(self):
         # verify the output does not exceed upper bound
