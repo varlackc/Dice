@@ -147,6 +147,8 @@ class TestNonNumeric(unittest.TestCase):
     def test_string_output(self):
         # verify the output is a string
         self.assertEqual(type(NonNumeric(["A","B","C","D","E","F"]).roll()),type("A"))
+        # verify the output is an element in the list of sides
+        self.assertIn(NonNumeric(["A","B","C","D","E","F"]).roll(), ["A","B","C","D","E","F"])
     def test_shake(self):
         # verify the shake method does not output
         self.assertIsNone(NonNumeric(["A","B","C","D","E","F"]).shake())
