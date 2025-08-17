@@ -5,7 +5,7 @@ class Die:
     def __init__(self):
         # initialize the attributes
         # set default values for a d6 
-        # instead of leaving attributes ad None
+        # instead of leaving attributes at None
         self.die_Type = "d6"
         self.face = 1
         self.side_number = 6
