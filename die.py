@@ -52,3 +52,8 @@ class D12(Die):
 class D20(Die):
     def __init__(self):
         super().d20()
+class CustomSides(Die):
+    def __init__(self,sides):
+        if (type(sides) == type(1)):
+          self.die_Type = "custom_sided"
+          self.side_number = sides
