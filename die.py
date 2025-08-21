@@ -70,3 +70,8 @@ class NonNumeric(Die):
         self.face = side_list[0]
         self.side_number = len(side_list)
         self.other = side_list
+class CustomSidesRange(Die):
+  def __init__(self,lower,higher):
+      if(type(lower) == type(1) and type(higher) == type(1)):
+        self.die_Type = "custom_sided_range"
+        self.side_number = higher - lower
