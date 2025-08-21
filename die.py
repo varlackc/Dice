@@ -33,25 +33,32 @@ class Die:
             self.face = value
 class D2(Die):
     def __init__(self):
-        super().d2()
+        self.die_Type = "d2"
+        self.side_number = 2
 class D4(Die):
     def __init__(self):
-        super().d4()
+        self.die_Type = "d4"
+        self.side_number = 4
 class D6(Die):
     def __init__(self):
-        super().__init__()
+        self.die_Type = "d6"
+        self.side_number = 6
 class D8(Die):
     def __init__(self):
-        super().d8()
+        self.die_Type = "d8"
+        self.side_number = 8
 class D10(Die):
     def __init__(self):
-        super().d10()
+        self.die_Type = "d10"
+        self.side_number = 10
 class D12(Die):
     def __init__(self):
-        super().d12()
+        self.die_Type = "d12"
+        self.side_number = 12
 class D20(Die):
     def __init__(self):
-        super().d20()
+        self.die_Type = "d20"
+        self.side_number = 20
 class CustomSides(Die):
     def __init__(self,sides):
         if (type(sides) == type(1)):
