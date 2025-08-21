@@ -156,3 +156,20 @@ class TestNonNumeric(unittest.TestCase):
         self.assertEqual(NonNumeric(["A","B","C","D","E","F"]).side_number, len(["A","B","C","D","E","F"]))
     def test_die_Type(self):
         self.assertEqual(NonNumeric(["A","B","C","D","E","F"]).die_Type, "non-numeric")
+class TestCustomSidesRange(unittest.TestCase):
+    def test_roll(self):
+        # verify an output is present
+        self.assertIsNotNone(CustomSidesRange(5,100).roll())
+    def test_low_bound(self):
+        # verify the output does not exceed lower bound
+        self.assertGreater(CustomSidesRange(5,100).roll(),4)
+    def test_upper_bound(self):
+        # verify the output does not exceed upper bound
+        self.assertLess(CustomSidesRange(5,100).roll(),101)
+    def test_shake(self):
+        # verify the shake method does not output
+        self.assertIsNone(CustomSidesRange(5,100).shake())
+    def test_sides(self):
+        self.assertEqual(CustomSidesRange(5,100).side_number, 95)
+    def test_die_Type(self):
+        self.assertEqual(CustomSidesRange(5,100).die_Type, "custom_sided_range")
