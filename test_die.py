@@ -6,7 +6,6 @@ from die import *
 # to test the whole thing python -m unittest
 class TestD2(unittest.TestCase):
     """This class describes the tests for a two sided die
-
     Args:
         unittest (_type_): _description_
     """
@@ -27,6 +26,11 @@ class TestD2(unittest.TestCase):
     def test_die_Type(self):
         self.assertEqual(D2().die_Type, "d2")
 class TestD4(unittest.TestCase):
+    """This class describes the tests for a four sided die
+
+    Args:
+        unittest (_type_): _description_
+    """
     def test_roll(self):
         # verify an output is present
         self.assertIsNotNone(D4().roll())
