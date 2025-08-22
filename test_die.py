@@ -92,6 +92,11 @@ class TestD8(unittest.TestCase):
     def test_die_Type(self):
         self.assertEqual(D8().die_Type, "d8")
 class TestD10(unittest.TestCase):
+    """This class describes the tests for a ten sided die
+
+    Args:
+        unittest (_type_): _description_
+    """
     def test_roll(self):
         # verify an output is present
         self.assertIsNotNone(D10().roll())
