@@ -180,6 +180,11 @@ class TestCustomSides(unittest.TestCase):
     def test_die_Type(self):
         self.assertEqual(CustomSides(100).die_Type, "custom_sided")
 class TestNonNumeric(unittest.TestCase):
+    """This class describes the tests for non numeric die
+
+    Args:
+        unittest (_type_): _description_
+    """
     def test_roll(self):
         # verify an output is present
         self.assertIsNotNone(NonNumeric(["A","B","C","D","E","F"]).roll())
