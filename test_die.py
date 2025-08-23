@@ -201,6 +201,11 @@ class TestNonNumeric(unittest.TestCase):
     def test_die_Type(self):
         self.assertEqual(NonNumeric(["A","B","C","D","E","F"]).die_Type, "non-numeric")
 class TestCustomSidesRange(unittest.TestCase):
+    """This class describes the tests for the custom sided range die
+
+    Args:
+        unittest (_type_): _description_
+    """
     def test_roll(self):
         # verify an output is present
         self.assertIsNotNone(CustomSidesRange(5,100).roll())
