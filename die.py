@@ -1,6 +1,11 @@
 import random
 # Die supper class
 class Die:
+    """This class describes the base Die
+
+    Returns:
+        _type_: _description_
+    """
     # constructor method
     def __init__(self):
         # initialize the attributes
