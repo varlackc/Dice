@@ -1,5 +1,7 @@
 **/__pycache__
 *.pyd
 *.pyc
+__pycache__
 
 *_old.py
+*_personal.md

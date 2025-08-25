@@ -16,3 +16,11 @@ The test for the die program have been written using the default unittest librar
 We can run the tests using the following command:
 
 `python -m unittest`
+
+or
+
+`python -m unittest discover tests`
+
+or 
+
+`python -m unittest discover -s tests -p 'test_*.py'`
