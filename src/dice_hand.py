@@ -13,3 +13,7 @@ class DiceHand:
         for i in range(len(self.die_set)):
             self.die_faces.append(self.die_set[i].get_face())
         return self.die_faces
+    def shake_dice(self):
+        # shake the dice
+        for i in range(len(self.die_set)):
+            self.die_set[i].shake()
