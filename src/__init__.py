@@ -1,4 +1,5 @@
 # using relative imports
+from .dice_hand import DiceHand
 from .die import Die
 from .d2 import D2
 from .d4 import D4
