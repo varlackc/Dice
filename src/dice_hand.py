@@ -17,3 +17,9 @@ class DiceHand:
         # shake the dice
         for i in range(len(self.die_set)):
             self.die_set[i].shake()
+    def roll_dice(self):
+        # roll the dice
+        result = []
+        for i in range(len(self.die_set)):
+            result.append(self.die_set[i].roll())
+        return result

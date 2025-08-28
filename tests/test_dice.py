@@ -17,10 +17,21 @@ class TestDiceHand(unittest.TestCase):
         set_d1.add_die(d2)
         self.assertIsNotNone(set_d1.get_faces())
     def test_shake_dice(self):
-        # verify that the faces can be shaken
+        # verify that the faces can be shaken without
+        # showing the numbers
         d1 = Die()
         d2 = Die()
         set_d1 = DiceHand()
         set_d1.add_die(d1)
         set_d1.add_die(d2)
         self.assertIsNone(set_d1.shake_dice())
+    def test_roll_dice(self):
+        # verify that the dice can be rolled
+        d1 = D6()
+        d2 = D6()
+        set_d1 = DiceHand()
+        set_d1.add_die(d1)
+        set_d1.add_die(d2)
+        self.assertIsNotNone(set_d1.roll_dice())
+#    def test_get_total(self):
+        # verify that the dice total can be
