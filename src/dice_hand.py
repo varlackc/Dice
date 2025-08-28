@@ -23,3 +23,9 @@ class DiceHand:
         for i in range(len(self.die_set)):
             result.append(self.die_set[i].roll())
         return result
+    def get_total(self):
+        # get the dice count total
+        result = 0
+        for i in range(len(self.die_set)):
+            result += self.die_set[i].get_face()
+        return result
