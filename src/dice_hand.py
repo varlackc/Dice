@@ -1,3 +1,5 @@
+# import typing to allow for the use of List parameters of objects
+from typing import List, Any
 from . import *
 
 class DiceHand:
@@ -7,6 +9,10 @@ class DiceHand:
         self.count_total = 0
     def add_die(self, die):
         self.die_set.append(die)
+    def add_dice(self, dice: List[Any]) -> None:
+        # add multiple dice at once
+        for i in range(len(dice)):
+            self.die_set.append(dice[i])
     def get_faces(self):
         # reset the die faces
         self.die_faces = []
