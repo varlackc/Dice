@@ -8,4 +8,5 @@ class D2(Die):
     """
     def __init__(self):
         self.die_Type = "d2"
+        self.face = 1
         self.side_number = 2

@@ -7,4 +7,5 @@ class D4(Die):
     """
     def __init__(self):
         self.die_Type = "d4"
+        self.face = 1
         self.side_number = 4
