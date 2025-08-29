@@ -3,6 +3,9 @@ from typing import List, Any
 from . import *
 
 class DiceHand:
+    """This class describes the Dice Hand
+       It allows to work with multiple die
+    """
     def __init__(self):
         self.die_set = []
         self.die_faces = []
