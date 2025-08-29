@@ -39,6 +39,6 @@ class Die:
         return self.face
     def get_type(self) -> str:
         return self.die_Type
-    def set_face(self, value) -> None:
+    def set_face(self, value:int) -> None:
         if(value < self.side_number and value > 0):
             self.face = value
