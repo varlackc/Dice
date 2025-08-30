@@ -44,3 +44,26 @@ class TestDiceHand(unittest.TestCase):
         set_d1 = DiceHand()
         set_d1.add_dice([d1,d2,d3])
         self.assertIsNotNone(set_d1.die_set)
+    def test_set_faces(self):
+        d1,d2,d3 = D6(),D6(),D6()
+        set_d1 = DiceHand()
+        set_d1.add_dice([d1,d2,d3])
+        initial = set_d1.get_faces()
+        new_values = []
+        # numeric cases
+        for item in initial:
+            if(item < 6):
+                new_values.append(item + 1)
+            else:
+                new_values.append(item - 1)
+        set_d1.set_faces(new_values)
+        result = (initial == set_d1.get_faces())
+        self.assertFalse(result)
+    def test_set_faces_same(self):
+        d1,d2,d3 = D6(),D6(),D6()
+        set_d1 = DiceHand()
+        set_d1.add_dice([d1,d2,d3])
+        initial = set_d1.get_faces()
+        set_d1.set_faces([None, None, None])
+        result = (initial == set_d1.get_faces())
+        self.assertTrue(result)
