@@ -11,6 +11,7 @@ class DiceHand:
         self.die_faces = []
         self.count_total = 0
     def add_die(self, die) -> None:
+        # this method adds a dice to the dice hand
         self.die_set.append(die)
     def add_dice(self, dice: List[Any]) -> None:
         # add multiple dice at once
