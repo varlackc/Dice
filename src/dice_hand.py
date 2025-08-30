@@ -39,6 +39,7 @@ class DiceHand:
             result += self.die_set[i].get_face()
         return result
     def set_faces(self, faces: List[Any]) -> None:
+        # set values to the dice
         for i in range(len(faces)):
             if(type(faces[i]) == type(self.die_set[i].face)):
                 self.die_set[i].face = faces[i]
