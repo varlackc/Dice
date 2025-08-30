@@ -24,3 +24,5 @@ or
 or 
 
 `python -m unittest discover -s tests -p 'test_*.py'`
+
+Additional documentation on how to use the dice project is provided in the docs folder.
