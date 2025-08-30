@@ -25,20 +25,20 @@ class TestD6(unittest.TestCase):
     """
     def test_roll(self):
         # verify an output is present
-        self.assertIsNotNone(D6().roll())
+        self.assertIsNotNone(Die().roll())
     def test_low_bound(self):
         # verify the output does not exceed lower bound
-        self.assertGreater(D6().roll(),0)
+        self.assertGreater(Die().roll(),0)
     def test_upper_bound(self):
         # verify the output does not exceed upper bound
-        self.assertLess(D6().roll(),7)
+        self.assertLess(Die().roll(),7)
     def test_shake(self):
         # verify the shake method does not output
-        self.assertIsNone(D6().shake())
+        self.assertIsNone(Die().shake())
     def test_sides(self):
-        self.assertEqual(D6().side_number, 6)
+        self.assertEqual(Die().side_number, 6)
     def test_die_Type(self):
-        self.assertEqual(D6().die_Type, "d6")
+        self.assertEqual(Die().die_Type, "d6")
 class TestD8(unittest.TestCase):
     """This class describes the tests for an eight sided die
 
