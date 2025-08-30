@@ -64,6 +64,7 @@ class TestDiceHand(unittest.TestCase):
         set_d1 = DiceHand()
         set_d1.add_dice([d1,d2,d3])
         initial = set_d1.get_faces()
+        # try by using the set faces method without modifying the dice
         set_d1.set_faces([None, None, None])
         result = (initial == set_d1.get_faces())
         self.assertTrue(result)
