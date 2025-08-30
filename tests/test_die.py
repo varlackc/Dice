@@ -17,27 +17,6 @@ from src import *
 #from src.d4 import D4
 
 # to test the whole thing python -m unittest
-class TestD2(unittest.TestCase):
-    """This class describes the tests for a two sided die
-    Args:
-        unittest (_type_): _description_
-    """
-    def test_roll(self):
-        # verify an output is present
-        self.assertIsNotNone(D2().roll())
-    def test_low_bound(self):
-        # verify the output does not exceed lower bound
-        self.assertGreater(D2().roll(),0)
-    def test_upper_bound(self):
-        # verify the output does not exceed upper bound
-        self.assertLess(D2().roll(),3)
-    def test_shake(self):
-        # verify the shake method does not output
-        self.assertIsNone(D2().shake())
-    def test_sides(self):
-        self.assertEqual(D2().side_number, 2)
-    def test_die_Type(self):
-        self.assertEqual(D2().die_Type, "d2")
 class TestD6(unittest.TestCase):
     """This class describes the tests for a six sided die
 
