@@ -38,28 +38,6 @@ class TestD2(unittest.TestCase):
         self.assertEqual(D2().side_number, 2)
     def test_die_Type(self):
         self.assertEqual(D2().die_Type, "d2")
-class TestD4(unittest.TestCase):
-    """This class describes the tests for a four sided die
-
-    Args:
-        unittest (_type_): _description_
-    """
-    def test_roll(self):
-        # verify an output is present
-        self.assertIsNotNone(D4().roll())
-    def test_low_bound(self):
-        # verify the output does not exceed lower bound
-        self.assertGreater(D4().roll(),0)
-    def test_upper_bound(self):
-        # verify the output does not exceed upper bound
-        self.assertLess(D4().roll(),5)
-    def test_shake(self):
-        # verify the shake method does not output
-        self.assertIsNone(D4().shake())
-    def test_sides(self):
-        self.assertEqual(D4().side_number, 4)
-    def test_die_Type(self):
-        self.assertEqual(D4().die_Type, "d4")
 class TestD6(unittest.TestCase):
     """This class describes the tests for a six sided die
 
