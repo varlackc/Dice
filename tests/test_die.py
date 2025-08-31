@@ -17,7 +17,7 @@ from src import *
 #from src.d4 import D4
 
 # to test the whole thing python -m unittest
-class TestD6(unittest.TestCase):
+class TestDie(unittest.TestCase):
     """This class describes the tests for a six sided die
 
     Args:

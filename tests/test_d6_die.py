@@ -1,7 +1,7 @@
 import unittest
 from src import *
 
-class TestD6Dice(unittest.TestCase):
+class TestD6Die(unittest.TestCase):
     def test_roll(self):
         # verify an output is present
         self.assertIsNotNone(D6().roll())
