@@ -1,3 +1,6 @@
+import unittest
+from src import *
+
 class TestCustomSides(unittest.TestCase):
     """This class describes the tests for a custom sided die
 
