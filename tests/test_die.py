@@ -1,20 +1,7 @@
 # unittest library documentation for python version 3.7
 # https://docs.python.org/3.7/library/unittest.html
 import unittest
-#from src.die import Die
-#from src.d2 import D2
 from src import *
-#from src.d4 import D4
-#from src.d6 import D6
-#from src.d8 import D8
-#from src.d10 import D10
-#from src.d12 import D12
-#from src.d20 import D20
-#from src.non_numeric import NonNumeric
-#from src.custom_sides import CustomSides
-#from src.custom_sides_range import CustomSidesRange
-
-#from src.d4 import D4
 
 # to test the whole thing python -m unittest
 class TestDie(unittest.TestCase):

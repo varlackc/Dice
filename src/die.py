@@ -1,6 +1,5 @@
 import random
-#from .d2 import D2
-# Die supper class
+
 class Die:
     """This class describes the base Die
 
