@@ -1,5 +1,5 @@
 import unittest
-from src import *
+from dice import *
 
 class TestCustomSidesRange(unittest.TestCase):
     """This class describes the tests for the custom sided range die

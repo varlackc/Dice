@@ -1,5 +1,5 @@
 import unittest
-from src import *
+from dice import *
 
 class TestD2Die(unittest.TestCase):
     """This class describes the tests for a two sided die

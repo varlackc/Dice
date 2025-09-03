@@ -1,5 +1,5 @@
 import unittest
-from src import *
+from dice import *
 
 class TestDiceHand(unittest.TestCase):
     def test_add_die(self):

@@ -1,5 +1,5 @@
 import unittest
-from src import *
+from dice import *
 
 class TestNonNumeric(unittest.TestCase):
     """This class describes the tests for non numeric die

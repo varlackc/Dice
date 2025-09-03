@@ -1,5 +1,5 @@
 import unittest
-from src import *
+from dice import *
 
 class TestD8(unittest.TestCase):
     """This class describes the tests for an eight sided die
