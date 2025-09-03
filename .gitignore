@@ -2,6 +2,7 @@
 *.pyd
 *.pyc
 __pycache__
+*.egg-info
 
 *_old.py
 *_personal.md

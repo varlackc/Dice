@@ -26,3 +26,29 @@ or
 `python -m unittest discover -s tests -p 'test_*.py'`
 
 Additional documentation on how to use the dice project is provided in the docs folder.
+
+----
+## Packaging the project
+
+In order to package the project you will have to have a separate `venv` environment to isolate your project from the rest of your production environment.
+
+You also will need to have `pip`, `setuptools`, `wheel` and `build` installed in your local `venv`.
+
+If you have pip but do not have the rest of the dependencies installed you can add the rest of the dependencies using the following pip command:
+
+`pip install build setuptools wheel`
+
+In order to build the `dice` package you can run the following commad:
+
+`python -m build`
+
+the result will be inside a `dist` folder. It will contain the package name and version number.
+There will be two files one as `whl` or `wheel` package that will be used for later installation and a `.tar.gz` file. 
+
+In order to install the build package in a separate environment you will have to activate the environment where you want to install the package. Then you will use `pip install` to install the project inside the new environment as follows:
+
+`pip install <file-location>\<package-name>-<version>-<py-version>.whl`
+
+for example:
+
+`pip install dice-0.0.1-py3-none-any.whl`

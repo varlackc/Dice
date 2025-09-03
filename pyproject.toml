@@ -1,4 +1,15 @@
 [project]
 name = "dice"
 version = "0.0.1"
-dependencies = [""]
+description = "A package to simulate dice"
+#dependencies = [""]
+
+#[project.optional-dependencies]
+# def = ["flake8"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["dice"]
