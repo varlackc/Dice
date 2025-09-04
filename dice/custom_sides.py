@@ -11,3 +11,5 @@ class CustomSides(Die):
           self.die_Type = "custom_sided"
           self.face = 1
           self.side_number = sides
+        else:
+          raise TypeError("The custom sided die must take an interger as an input")

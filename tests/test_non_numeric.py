@@ -18,6 +18,9 @@ class TestNonNumeric(unittest.TestCase):
     def test_string_and_int(self):
         # verify that both integers and strings are used
         self.assertIsNotNone(NonNumeric(["A",1,"B",2,"C",3]))
+    def test_int(self):
+        # verify that the integers can be added
+        self.assertIsNotNone(NonNumeric([1,2,3]))
     def test_shake(self):
         # verify the shake method does not output
         self.assertIsNone(NonNumeric(["A","B","C","D","E","F"]).shake())
