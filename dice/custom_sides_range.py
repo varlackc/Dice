@@ -1,6 +1,11 @@
 # use a relative import
 from .die import Die
 class CustomSidesRange(Die):
+  """This class describes the Custom Sides Range Die
+
+  Args:
+      Die (_type_): _description_
+  """
   def __init__(self,lower:int,higher:int):
     if(type(lower) == type(1) and type(higher) == type(1)):
       self.die_Type = "custom_sided_range"
