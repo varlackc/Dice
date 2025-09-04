@@ -16,6 +16,11 @@ class TestCustomSides(unittest.TestCase):
     def test_upper_bound(self):
         # verify the output does not exceed upper bound
         self.assertLess(CustomSides(100).roll(),101)
+    def test_string_error(self):
+        # verify that given a string the dice races and error
+        # https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertRaises
+        with self.assertRaises(TypeError):
+            CustomSides("A").roll()
     def test_shake(self):
         # verify the shake method does not output
         self.assertIsNone(CustomSides(100).shake())

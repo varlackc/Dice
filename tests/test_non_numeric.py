@@ -15,6 +15,9 @@ class TestNonNumeric(unittest.TestCase):
         self.assertEqual(type(NonNumeric(["A","B","C","D","E","F"]).roll()),type("A"))
         # verify the output is an element in the list of sides
         self.assertIn(NonNumeric(["A","B","C","D","E","F"]).roll(), ["A","B","C","D","E","F"])
+    def test_string_and_int(self):
+        # verify that both integers and strings are used
+        self.assertIsNotNone(NonNumeric(["A",1,"B",2,"C",3]))
     def test_shake(self):
         # verify the shake method does not output
         self.assertIsNone(NonNumeric(["A","B","C","D","E","F"]).shake())
