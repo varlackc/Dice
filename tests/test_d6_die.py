@@ -2,6 +2,11 @@ import unittest
 from dice import *
 
 class TestD6Die(unittest.TestCase):
+    """This class describes the tests for the six sided die
+
+    Args:
+        unittest (_type_): _description_
+    """
     def test_roll(self):
         # verify an output is present
         self.assertIsNotNone(D6().roll())

@@ -2,6 +2,11 @@ import unittest
 from dice import *
 
 class TestDiceHand(unittest.TestCase):
+    """This class describes the tests for a dice hand
+
+    Args:
+        unittest (_type_): _description_
+    """
     def test_add_die(self):
         # verify that a die can be added
         d1 = Die()
