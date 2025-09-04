@@ -1,5 +1,5 @@
 import unittest
-from dice import *
+from dice import D4
 
 class TestD4Die(unittest.TestCase):
     """This class describes the tests for a four sided die

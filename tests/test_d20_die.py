@@ -1,5 +1,5 @@
 import unittest
-from dice import *
+from dice import D20
 
 class TestD20(unittest.TestCase):
     """This class describes the tests for a twenty sided die

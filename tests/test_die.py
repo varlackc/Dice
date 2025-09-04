@@ -1,7 +1,7 @@
 # unittest library documentation for python version 3.7
 # https://docs.python.org/3.7/library/unittest.html
 import unittest
-from dice import *
+from dice import Die
 
 # to test the whole thing python -m unittest
 class TestDie(unittest.TestCase):

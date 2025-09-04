@@ -1,5 +1,5 @@
 import unittest
-from dice import *
+from dice import Die, D4, D6, D8, DiceHand
 
 class TestDiceHand(unittest.TestCase):
     """This class describes the tests for a dice hand
