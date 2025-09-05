@@ -25,6 +25,8 @@ class TestCustomSides(unittest.TestCase):
         # verify the shake method does not output
         self.assertIsNone(CustomSides(100).shake())
     def test_sides(self):
+        # verify that the number of tests is as expected
         self.assertEqual(CustomSides(100).side_number, 100)
     def test_die_Type(self):
+        # verify that the die type is correct
         self.assertEqual(CustomSides(100).die_Type, "custom_sided")
