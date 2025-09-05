@@ -20,6 +20,8 @@ class TestD6Die(unittest.TestCase):
         # verify the shake method does not output
         self.assertIsNone(D6().shake())
     def test_sides(self):
+        # verify that the number of sides are correct
         self.assertEqual(D6().side_number, 6)
     def test_die_Type(self):
+        # verify that the die type is correct
         self.assertEqual(D6().die_Type, "d6")
