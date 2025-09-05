@@ -20,8 +20,11 @@ class TestCustomSidesRange(unittest.TestCase):
         # verify the shake method does not output
         self.assertIsNone(CustomSidesRange(5,100).shake())
     def test_custom_sides(self):
+        # verify that the number of sides is equal to the expected value
         self.assertEqual(CustomSidesRange(5,100).side_number, 95)
     def test_custom_negative(self):
+        # verify that it is possible to assign negative values
         self.assertLess(CustomSidesRange(-5,-1).roll(),0)
     def test_custom_die_Type(self):
+        # verify that the type of die is correct.
         self.assertEqual(CustomSidesRange(5,100).die_Type, "custom_sided_range")
