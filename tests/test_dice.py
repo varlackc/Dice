@@ -50,6 +50,7 @@ class TestDiceHand(unittest.TestCase):
         set_d1.add_dice([d1,d2,d3])
         self.assertIsNotNone(set_d1.die_set)
     def test_set_faces(self):
+        # verify that the faces in the different dice could be set
         d1,d2,d3 = D6(),D6(),D6()
         set_d1 = DiceHand()
         set_d1.add_dice([d1,d2,d3])
@@ -65,6 +66,7 @@ class TestDiceHand(unittest.TestCase):
         result = (initial == set_d1.get_faces())
         self.assertFalse(result)
     def test_set_faces_same(self):
+        # verify that dices could be skipped when setting dice faces
         d1,d2,d3 = D6(),D6(),D6()
         set_d1 = DiceHand()
         set_d1.add_dice([d1,d2,d3])
