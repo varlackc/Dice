@@ -25,6 +25,15 @@ class TestCustomSidesRange(unittest.TestCase):
     def test_custom_negative(self):
         # verify that it is possible to assign negative values
         self.assertLess(CustomSidesRange(-5,-1).roll(),0)
+    def test_custom_no_input(self):
+        # verify that an exception is raced if no input is given
+        # https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertRaises
+        with self.assertRaises(TypeError):
+            CustomSidesRange()
+    def test_custom_excess_input(self):
+        # verify that an error occur if two many parameters are used
+        with self.assertRaises(TypeError):
+            CustomSidesRange(5,10,20)
     def test_custom_die_Type(self):
         # verify that the type of die is correct.
         self.assertEqual(CustomSidesRange(5,100).die_Type, "custom_sided_range")
