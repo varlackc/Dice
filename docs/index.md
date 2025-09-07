@@ -15,7 +15,7 @@ from src import D6
 There is also the possibility of importing all of the classes in the project using the following call:
 
 ```python
-from src import *
+from dice import *
 ```
 
 We then will have to call the instance of the die before we could take any actions with the die. The process will look as follows:
