@@ -1,4 +1,6 @@
 from .die import Die
+
+
 class D4(Die):
     """This class describes the D4 Die
 

@@ -1,4 +1,6 @@
 from .die import Die
+
+
 class NonNumeric(Die):
     """This class describes the Non-numeric Die
 
@@ -10,5 +12,6 @@ class NonNumeric(Die):
         self.face = side_list[0]
         self.side_number = len(side_list)
         self.other = side_list
-    def set_face(self, value:str) -> None:
+
+    def set_face(self, value: str) -> None:
         self.face = value

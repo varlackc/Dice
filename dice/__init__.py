@@ -11,3 +11,6 @@ from .d20 import D20
 from .non_numeric import NonNumeric
 from .custom_sides import CustomSides
 from .custom_sides_range import CustomSidesRange
+
+__all__ = ["Die", "D2", "D4", "D6", "D8", "D10", "D12", "D20",
+           "NonNumeric", "CustomSides", "CustomSidesRange", "DiceHand"]

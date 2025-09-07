@@ -1,4 +1,6 @@
 from .die import Die
+
+
 class D8(Die):
     """This class describes the D8 Die
 
