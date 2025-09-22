@@ -1,5 +1,4 @@
-# Documentation for the Dice Project
----
+# 🎲 Dice Project
 
 The purpose of the dice project is to facilitate the process of generating random numbers.
 
