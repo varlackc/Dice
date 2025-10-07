@@ -5,12 +5,12 @@ You have the option to select the type and quality of dice that you want to work
 
 The dice available include `D4`, `D6`, `D8`, `D10`, `D12`, `D20` and `custom die`. In addition we have a `coin` option that is considered a `D2` die.
 
-## How to call the Dice proejct files
+## How to call the Dice project files
 
-The first step is to import the files in the `src` folder and select the classes that cointain the type of die that you are trying to use. The following example shows how to call a standard `D6` die:
+The first step is to import the files in the `dice` folder and select the classes that cointain the type of die that you are trying to use. The following example shows how to call a standard `D6` die:
 
 ```python
-from src import D6
+from dice import D6
 ```
 There is also the possibility of importing all of the classes in the project using the following call:
 
