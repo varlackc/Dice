@@ -7,7 +7,7 @@ The dice available include `D4`, `D6`, `D8`, `D10`, `D12`, `D20` and `custom die
 
 ## How to call the Dice project files
 
-The first step is to import the files in the `dice` folder and select the classes that cointain the type of die that you are trying to use. The following example shows how to call a standard `D6` die:
+The first step is to import the files in the `dice` folder and select the classes that contain the type of die that you are trying to use. The following example shows how to call a standard `D6` die:
 
 ```python
 from dice import D6
