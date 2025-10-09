@@ -18,7 +18,7 @@ There is also the possibility of importing all of the classes in the project usi
 from dice import *
 ```
 
-We then will have to call the instance of the die before we could take any actions with the die. The process will look as follows:
+We then will have to call the instance of the `die` before we could take any actions with the `die`. The process will look as follows:
 
 ```
 d1 = D6()
