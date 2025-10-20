@@ -30,8 +30,10 @@ class Die:
         return self.face
 
     def shake(self) -> None:
-        # if the die is non numeric
-        # then select from the list in the other attribute
+        """ 
+        if the die is non numeric
+        then select from the list in the other attribute
+        """
         if (self.die_Type == "non-numeric"):
             self.face = random.choice(self.other)
         elif (self.die_Type == "custom_sided_range"):
