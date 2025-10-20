@@ -9,8 +9,10 @@ class CustomSidesRange(Die):
         Die (_type_): _description_
     """
     def __init__(self, lower: int, higher: int):
-        # use is instance to verify that the sides is of type integer
-        # https://docs.python.org/3.7/library/functions.html#isinstance
+        """
+        use is instance to verify that the sides is of type integer
+        https://docs.python.org/3.7/library/functions.html#isinstance
+        """
         if (isinstance(lower, int) and isinstance(higher, int)):
             self.die_Type = "custom_sided_range"
             self.face = lower
