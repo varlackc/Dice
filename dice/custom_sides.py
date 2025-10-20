@@ -9,8 +9,10 @@ class CustomSides(Die):
         Die (_type_): _description_
     """
     def __init__(self, sides):
-        # use is instance to verify that the sides is of type integer
-        # https://docs.python.org/3.7/library/functions.html#isinstance
+        """
+        use is instance to verify that the sides is of type integer
+        https://docs.python.org/3.7/library/functions.html#isinstance
+        """
         if (isinstance(sides, int)):
             self.die_Type = "custom_sided"
             self.face = 1
