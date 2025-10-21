@@ -3,7 +3,8 @@ from .die import Die
 
 
 class D12(Die):
-    """This class describes the D12 Die
+    """
+    This class describes the D12 Die
 
     Args:
         Die (_type_): _description_
