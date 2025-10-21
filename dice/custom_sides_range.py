@@ -3,7 +3,8 @@ from .die import Die
 
 
 class CustomSidesRange(Die):
-    """This class describes the Custom Sides Range Die
+    """
+    This class describes the Custom Sides Range Die
 
     Args:
         Die (_type_): _description_
