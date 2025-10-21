@@ -2,7 +2,8 @@ from .die import Die
 
 
 class NonNumeric(Die):
-    """This class describes the Non-numeric Die
+    """
+    This class describes the Non-numeric Die
 
     Args:
         Die (_type_): _description_
