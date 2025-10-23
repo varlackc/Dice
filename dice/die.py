@@ -2,7 +2,8 @@ import random
 
 
 class Die:
-    """This class describes the base Die
+    """
+    This class describes the base Die
 
     Returns:
         _type_: _description_
