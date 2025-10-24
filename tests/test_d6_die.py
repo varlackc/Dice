@@ -3,7 +3,8 @@ from dice import D6
 
 
 class TestD6Die(unittest.TestCase):
-    """This class describes the tests for the six sided die
+    """
+    This class describes the tests for the six sided die
 
     Args:
         unittest (_type_): _description_
