@@ -3,7 +3,8 @@ from dice import D8
 
 
 class TestD8(unittest.TestCase):
-    """This class describes the tests for an eight sided die
+    """
+    This class describes the tests for an eight sided die
 
     Args:
         unittest (_type_): _description_
