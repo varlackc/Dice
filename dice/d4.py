@@ -8,7 +8,7 @@ class D4(Die):
     Args:
         Die (_type_): _description_
     """
-    def __init__(self):
-        self.die_Type = "d4"
-        self.face = 1
-        self.side_number = 4
+    def __init__(self) -> None:
+        self.die_Type: str = "d4"
+        self.face: int = 1
+        self.side_number: int = 4
