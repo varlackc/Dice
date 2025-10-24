@@ -3,7 +3,8 @@ from dice import CustomSides
 
 
 class TestCustomSides(unittest.TestCase):
-    """This class describes the tests for a custom sided die
+    """
+    This class describes the tests for a custom sided die
 
     Args:
         unittest (_type_): _description_
