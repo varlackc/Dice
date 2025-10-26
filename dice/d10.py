@@ -9,6 +9,6 @@ class D10(Die):
         Die (_type_): _description_
     """
     def __init__(self):
-        self.die_Type = "d10"
-        self.face = 1
-        self.side_number = 10
+        self.die_Type: str = "d10"
+        self.face: int = 1
+        self.side_number: int = 10
