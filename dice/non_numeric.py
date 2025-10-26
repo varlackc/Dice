@@ -9,9 +9,9 @@ class NonNumeric(Die):
         Die (_type_): _description_
     """
     def __init__(self, side_list):
-        self.die_Type = "non-numeric"
+        self.die_Type: str = "non-numeric"
         self.face = side_list[0]
-        self.side_number = len(side_list)
+        self.side_number: int = len(side_list)
         self.other = side_list
 
     def set_face(self, value: str) -> None:
