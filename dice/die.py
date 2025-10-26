@@ -15,9 +15,9 @@ class Die:
         set default values for a d6
         instead of leaving attributes at None
         """
-        self.die_Type = "d6"
-        self.face = 1
-        self.side_number = 6
+        self.die_Type: str = "d6"
+        self.face: int = 1
+        self.side_number: int = 6
         self.other = None
 
     def roll(self) -> int:
