@@ -10,7 +10,7 @@ class DiceHand:
     def __init__(self):
         self.die_set = []
         self.die_faces = []
-        self.count_total = 0
+        self.count_total: int = 0
 
     def add_die(self, die) -> None:
         # this method adds a dice to the dice hand
