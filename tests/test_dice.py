@@ -3,7 +3,8 @@ from dice import Die, D4, D6, D8, DiceHand
 
 
 class TestDiceHand(unittest.TestCase):
-    """This class describes the tests for a dice hand
+    """
+    This class describes the tests for a dice hand
 
     Args:
         unittest (_type_): _description_
