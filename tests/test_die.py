@@ -6,7 +6,8 @@ from dice import Die
 
 # to test the whole thing python -m unittest
 class TestDie(unittest.TestCase):
-    """This class describes the tests for a six sided die
+    """
+    This class describes the tests for a six sided die
 
     Args:
         unittest (_type_): _description_
