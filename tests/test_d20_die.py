@@ -3,7 +3,8 @@ from dice import D20
 
 
 class TestD20(unittest.TestCase):
-    """This class describes the tests for a twenty sided die
+    """
+    This class describes the tests for a twenty sided die
 
     Args:
         unittest (_type_): _description_
