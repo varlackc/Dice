@@ -3,7 +3,8 @@ from dice import NonNumeric
 
 
 class TestNonNumeric(unittest.TestCase):
-    """This class describes the tests for non numeric die
+    """
+    This class describes the tests for non numeric die
 
     Args:
         unittest (_type_): _description_
