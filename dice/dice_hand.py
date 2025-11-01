@@ -23,7 +23,7 @@ class DiceHand:
 
     def get_faces(self) -> int:
         # reset the die faces
-        self.die_faces = []
+        self.die_faces: list = []
         for i in range(len(self.die_set)):
             self.die_faces.append(self.die_set[i].get_face())
         return self.die_faces
