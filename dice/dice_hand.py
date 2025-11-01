@@ -8,8 +8,8 @@ class DiceHand:
     It allows to work with multiple die
     """
     def __init__(self):
-        self.die_set = []
-        self.die_faces = []
+        self.die_set: list = []
+        self.die_faces: list = []
         self.count_total: int = 0
 
     def add_die(self, die) -> None:
