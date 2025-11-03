@@ -9,7 +9,7 @@ class Die:
         _type_: _description_
     """
     # constructor method
-    def __init__(self):
+    def __init__(self) -> None:
         """
         initialize the attributes
         set default values for a d6
