@@ -8,7 +8,7 @@ class NonNumeric(Die):
     Args:
         Die (_type_): _description_
     """
-    def __init__(self, side_list):
+    def __init__(self, side_list) -> None:
         self.die_Type: str = "non-numeric"
         self.face = side_list[0]
         self.side_number: int = len(side_list)
