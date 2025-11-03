@@ -9,7 +9,7 @@ class TestCustomSidesRange(unittest.TestCase):
     Args:
         unittest (_type_): _description_
     """
-    def test_custom_roll(self):
+    def test_custom_roll(self) -> None:
         # verify an output is present
         self.assertIsNotNone(CustomSidesRange(5, 100).roll())
 
