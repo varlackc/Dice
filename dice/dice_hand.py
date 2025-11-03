@@ -7,7 +7,7 @@ class DiceHand:
     This class describes the Dice Hand
     It allows to work with multiple die
     """
-    def __init__(self):
+    def __init__(self) -> None:
         self.die_set: list = []
         self.die_faces: list = []
         self.count_total: int = 0
