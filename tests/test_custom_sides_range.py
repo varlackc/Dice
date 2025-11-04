@@ -29,7 +29,7 @@ class TestCustomSidesRange(unittest.TestCase):
         # verify that the number of sides is equal to the expected value
         self.assertEqual(CustomSidesRange(5, 100).side_number, 95)
 
-    def test_custom_negative(self):
+    def test_custom_negative(self) -> None:
         # verify that it is possible to assign negative values
         self.assertLess(CustomSidesRange(-5, -1).roll(), 0)
 
