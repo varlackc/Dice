@@ -33,7 +33,7 @@ class TestCustomSidesRange(unittest.TestCase):
         # verify that it is possible to assign negative values
         self.assertLess(CustomSidesRange(-5, -1).roll(), 0)
 
-    def test_custom_no_input(self):
+    def test_custom_no_input(self) -> None:
         # verify that an exception is raced if no input is given
         # https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertRaises
         with self.assertRaises(TypeError):
