@@ -25,7 +25,7 @@ class TestCustomSidesRange(unittest.TestCase):
         # verify the shake method does not output
         self.assertIsNone(CustomSidesRange(5, 100).shake())
 
-    def test_custom_sides(self):
+    def test_custom_sides(self) -> None:
         # verify that the number of sides is equal to the expected value
         self.assertEqual(CustomSidesRange(5, 100).side_number, 95)
 
