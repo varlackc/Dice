@@ -21,7 +21,7 @@ class TestCustomSidesRange(unittest.TestCase):
         # verify the output does not exceed upper bound
         self.assertLess(CustomSidesRange(5, 100).roll(), 101)
 
-    def test_custom_shake(self):
+    def test_custom_shake(self) -> None:
         # verify the shake method does not output
         self.assertIsNone(CustomSidesRange(5, 100).shake())
 
