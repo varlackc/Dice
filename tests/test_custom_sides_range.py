@@ -44,7 +44,7 @@ class TestCustomSidesRange(unittest.TestCase):
         with self.assertRaises(TypeError):
             CustomSidesRange(5, 10, 20)
 
-    def test_custom_die_Type(self):
+    def test_custom_die_Type(self) -> None:
         # verify that the type of die is correct.
         self.assertEqual(CustomSidesRange(5, 100).die_Type,
                          "custom_sided_range")
