@@ -17,7 +17,7 @@ class TestCustomSides(unittest.TestCase):
         # verify the output does not exceed lower bound
         self.assertGreater(CustomSides(100).roll(), 0)
 
-    def test_upper_bound(self):
+    def test_upper_bound(self) -> None:
         # verify the output does not exceed upper bound
         self.assertLess(CustomSides(100).roll(), 101)
 
