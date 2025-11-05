@@ -39,7 +39,7 @@ class TestCustomSidesRange(unittest.TestCase):
         with self.assertRaises(TypeError):
             CustomSidesRange()
 
-    def test_custom_excess_input(self):
+    def test_custom_excess_input(self) -> None:
         # verify that an error occur if two many parameters are used
         with self.assertRaises(TypeError):
             CustomSidesRange(5, 10, 20)
