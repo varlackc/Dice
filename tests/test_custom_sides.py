@@ -33,7 +33,7 @@ class TestCustomSides(unittest.TestCase):
         # verify the shake method does not output
         self.assertIsNone(CustomSides(100).shake())
 
-    def test_sides(self):
+    def test_sides(self) -> None:
         # verify that the number of tests is as expected
         self.assertEqual(CustomSides(100).side_number, 100)
 
