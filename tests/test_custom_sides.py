@@ -37,6 +37,6 @@ class TestCustomSides(unittest.TestCase):
         # verify that the number of tests is as expected
         self.assertEqual(CustomSides(100).side_number, 100)
 
-    def test_die_Type(self):
+    def test_die_Type(self) -> None:
         # verify that the die type is correct
         self.assertEqual(CustomSides(100).die_Type, "custom_sided")
