@@ -13,7 +13,7 @@ class TestCustomSides(unittest.TestCase):
         # verify an output is present
         self.assertIsNotNone(CustomSides(100).roll())
 
-    def test_low_bound(self):
+    def test_low_bound(self) -> None:
         # verify the output does not exceed lower bound
         self.assertGreater(CustomSides(100).roll(), 0)
 
