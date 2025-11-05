@@ -29,7 +29,7 @@ class TestCustomSides(unittest.TestCase):
         with self.assertRaises(TypeError):
             CustomSides("A").roll()
 
-    def test_shake(self):
+    def test_shake(self) -> None:
         # verify the shake method does not output
         self.assertIsNone(CustomSides(100).shake())
 
