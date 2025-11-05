@@ -22,8 +22,10 @@ class TestCustomSides(unittest.TestCase):
         self.assertLess(CustomSides(100).roll(), 101)
 
     def test_string_error(self) -> None:
-        # verify that given a string the dice races and error
-        # https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertRaises
+        """
+        verify that given a string the dice races and error
+        https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertRaises
+        """
         with self.assertRaises(TypeError):
             CustomSides("A").roll()
 
