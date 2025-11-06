@@ -13,7 +13,7 @@ class TestD4Die(unittest.TestCase):
         # verify an output is present
         self.assertIsNotNone(D4().roll())
 
-    def test_d4_low_bound(self):
+    def test_d4_low_bound(self) -> None:
         # verify the output does not exceed lower bound
         self.assertGreater(D4().roll(), 0)
 
