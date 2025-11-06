@@ -9,7 +9,7 @@ class TestD2Die(unittest.TestCase):
     Args:
         unittest (_type_): _description_
     """
-    def test_d2_roll(self):
+    def test_d2_roll(self) -> None:
         # verify an output is present
         self.assertIsNotNone(D2().roll())
 
