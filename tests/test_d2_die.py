@@ -29,6 +29,6 @@ class TestD2Die(unittest.TestCase):
         # verify the number of sides
         self.assertEqual(D2().side_number, 2)
 
-    def test_d2_Type(self):
+    def test_d2_Type(self) -> None:
         # verify that the type of die is correct
         self.assertEqual(D2().die_Type, "d2")
