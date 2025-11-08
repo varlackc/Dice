@@ -21,7 +21,7 @@ class TestD6Die(unittest.TestCase):
         # verify the output does not exceed upper bound
         self.assertLess(D6().roll(), 7)
 
-    def test_shake(self):
+    def test_shake(self) -> None:
         # verify the shake method does not output
         self.assertIsNone(D6().shake())
 
