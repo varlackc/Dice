@@ -21,7 +21,7 @@ class TestD8(unittest.TestCase):
         # verify the output does not exceed upper bound
         self.assertLess(D8().roll(), 9)
 
-    def test_shake(self):
+    def test_shake(self) -> None:
         # verify the shake method does not output
         self.assertIsNone(D8().shake())
 
