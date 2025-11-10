@@ -9,7 +9,7 @@ class TestD8(unittest.TestCase):
     Args:
         unittest (_type_): _description_
     """
-    def test_roll(self):
+    def test_roll(self) -> None:
         # verify an output is present
         self.assertIsNotNone(D8().roll())
 
