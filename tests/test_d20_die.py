@@ -13,7 +13,7 @@ class TestD20(unittest.TestCase):
         # verify an output is present
         self.assertIsNotNone(D20().roll())
 
-    def test_low_bound(self):
+    def test_low_bound(self) -> None:
         # verify the output does not exceed lower bound
         self.assertGreater(D20().roll(), 0)
 
