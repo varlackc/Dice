@@ -17,7 +17,7 @@ class TestD20(unittest.TestCase):
         # verify the output does not exceed lower bound
         self.assertGreater(D20().roll(), 0)
 
-    def test_upper_bound(self):
+    def test_upper_bound(self) -> None:
         # verify the output does not exceed upper bound
         self.assertLess(D20().roll(), 21)
 
