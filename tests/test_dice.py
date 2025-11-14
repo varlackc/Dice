@@ -16,7 +16,7 @@ class TestDiceHand(unittest.TestCase):
         set_d1.add_die(d1)
         self.assertGreater(len(set_d1.die_set), 0)
 
-    def test_get_faces(self):
+    def test_get_faces(self) -> None:
         # verify that the faces can be shown
         d1, d2 = Die(), Die()
         set_d1 = DiceHand()
