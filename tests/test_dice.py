@@ -9,7 +9,7 @@ class TestDiceHand(unittest.TestCase):
     Args:
         unittest (_type_): _description_
     """
-    def test_add_die(self):
+    def test_add_die(self) -> None:
         # verify that a die can be added
         d1 = Die()
         set_d1 = DiceHand()
