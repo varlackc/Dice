@@ -29,6 +29,6 @@ class TestD20(unittest.TestCase):
         # verify that the number of sides are correct
         self.assertEqual(D20().side_number, 20)
 
-    def test_die_Type(self):
+    def test_die_Type(self) -> None:
         # verify that the die type is correct
         self.assertEqual(D20().die_Type, "d20")
