@@ -33,7 +33,7 @@ class TestDiceHand(unittest.TestCase):
         set_d1.add_die(d2)
         self.assertIsNone(set_d1.shake_dice())
 
-    def test_roll_dice(self):
+    def test_roll_dice(self) -> None:
         # verify that the dice can be rolled
         d1, d2 = D6(), D6()
         set_d1 = DiceHand()
