@@ -24,7 +24,7 @@ class TestDiceHand(unittest.TestCase):
         set_d1.add_die(d2)
         self.assertIsNotNone(set_d1.get_faces())
 
-    def test_shake_dice(self):
+    def test_shake_dice(self) -> None:
         # verify that the faces can be shaken without
         # showing the numbers
         d1, d2 = Die(), Die()
