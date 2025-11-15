@@ -41,7 +41,7 @@ class TestDiceHand(unittest.TestCase):
         set_d1.add_die(d2)
         self.assertIsNotNone(set_d1.roll_dice())
 
-    def test_get_total(self):
+    def test_get_total(self) -> None:
         # verify that the dice total can be aquired
         d1, d2 = D6(), D6()
         set_d1 = DiceHand()
