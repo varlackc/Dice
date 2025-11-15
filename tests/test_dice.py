@@ -49,7 +49,7 @@ class TestDiceHand(unittest.TestCase):
         set_d1.add_die(d2)
         self.assertIsNotNone(set_d1.get_total())
 
-    def test_add_dice(self):
+    def test_add_dice(self) -> None:
         """
         verify that a list of dice can be added
         all at once to the dice hand
