@@ -16,7 +16,7 @@ class TestDie(unittest.TestCase):
         # verify an output is present
         self.assertIsNotNone(Die().roll())
 
-    def test_low_bound(self):
+    def test_low_bound(self) -> None:
         # verify the output does not exceed lower bound
         self.assertGreater(Die().roll(), 0)
 
