@@ -76,7 +76,7 @@ class TestDiceHand(unittest.TestCase):
         result = (initial == set_d1.get_faces())
         self.assertFalse(result)
 
-    def test_set_faces_same(self):
+    def test_set_faces_same(self) -> None:
         # verify that dices could be skipped when setting dice faces
         d1, d2, d3 = D6(), D6(), D6()
         set_d1 = DiceHand()
