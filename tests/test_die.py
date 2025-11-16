@@ -20,7 +20,7 @@ class TestDie(unittest.TestCase):
         # verify the output does not exceed lower bound
         self.assertGreater(Die().roll(), 0)
 
-    def test_upper_bound(self):
+    def test_upper_bound(self) -> None:
         # verify the output does not exceed upper bound
         self.assertLess(Die().roll(), 7)
 
