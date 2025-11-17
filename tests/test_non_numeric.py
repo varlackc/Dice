@@ -13,7 +13,7 @@ class TestNonNumeric(unittest.TestCase):
         # verify an output is present
         self.assertIsNotNone(NonNumeric(["A", "B", "C", "D", "E", "F"]).roll())
 
-    def test_string_output(self):
+    def test_string_output(self) -> None:
         # verify the output is a string
         self.assertEqual(type(NonNumeric(["A", "B", "C", "D", "E", "F"]
                                          ).roll()), type("A"))
