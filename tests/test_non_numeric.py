@@ -34,7 +34,7 @@ class TestNonNumeric(unittest.TestCase):
         self.assertIsNone(NonNumeric(["A", "B", "C", "D", "E", "F"]
                                      ).shake())
 
-    def test_sides(self):
+    def test_sides(self) -> None:
         self.assertEqual(NonNumeric(["A", "B", "C", "D", "E", "F"]
                                     ).side_number,
                          len(["A", "B", "C", "D", "E", "F"]))
