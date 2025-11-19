@@ -29,7 +29,7 @@ class TestNonNumeric(unittest.TestCase):
         # verify that the integers can be added
         self.assertIsNotNone(NonNumeric([1, 2, 3]))
 
-    def test_shake(self):
+    def test_shake(self) -> None:
         # verify the shake method does not output
         self.assertIsNone(NonNumeric(["A", "B", "C", "D", "E", "F"]
                                      ).shake())
