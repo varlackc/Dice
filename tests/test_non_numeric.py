@@ -39,6 +39,6 @@ class TestNonNumeric(unittest.TestCase):
                                     ).side_number,
                          len(["A", "B", "C", "D", "E", "F"]))
 
-    def test_die_Type(self):
+    def test_die_Type(self) -> None:
         self.assertEqual(NonNumeric(["A", "B", "C", "D", "E", "F"]
                                     ).die_Type, "non-numeric")
