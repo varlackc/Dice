@@ -35,6 +35,7 @@ class TestNonNumeric(unittest.TestCase):
                                      ).shake())
 
     def test_sides(self) -> None:
+        # verify that the number of sides on the die is correct
         self.assertEqual(NonNumeric(["A", "B", "C", "D", "E", "F"]
                                     ).side_number,
                          len(["A", "B", "C", "D", "E", "F"]))
