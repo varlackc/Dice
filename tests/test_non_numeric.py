@@ -41,5 +41,6 @@ class TestNonNumeric(unittest.TestCase):
                          len(["A", "B", "C", "D", "E", "F"]))
 
     def test_die_Type(self) -> None:
+        # verify that the type of the dice is correct
         self.assertEqual(NonNumeric(["A", "B", "C", "D", "E", "F"]
                                     ).die_Type, "non-numeric")
