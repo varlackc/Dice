@@ -9,7 +9,7 @@ class CustomSides(Die):
     Args:
         Die (_type_): _description_
     """
-    def __init__(self, sides):
+    def __init__(self, sides: any) -> None:
         """
         use is instance to verify that the sides is of type integer
         https://docs.python.org/3.7/library/functions.html#isinstance
