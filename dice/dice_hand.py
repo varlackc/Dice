@@ -19,7 +19,12 @@ class DiceHand:
         self.die_set.append(die)
 
     def add_dice(self, dice: List[Any]) -> None:
-        # add multiple dice at once
+        """
+        Docstring for add_dice to add multiple dice at once
+        :param self: Description
+        :param dice: Description
+        :type dice: List[Any]
+        """
         for i in range(len(dice)):
             self.die_set.append(dice[i])
 
