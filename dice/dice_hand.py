@@ -13,7 +13,9 @@ class DiceHand:
         self.count_total: int = 0
 
     def add_die(self, die) -> None:
-        # this method adds a dice to the dice hand
+        """
+        This method adds a dice to the dice hand
+        """
         self.die_set.append(die)
 
     def add_dice(self, dice: List[Any]) -> None:
