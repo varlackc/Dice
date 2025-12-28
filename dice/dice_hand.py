@@ -29,7 +29,12 @@ class DiceHand:
             self.die_set.append(dice[i])
 
     def get_faces(self) -> int:
-        # reset the die faces
+        """
+        Docstring for get_faces to reset the die faces
+        :param self: Description
+        :return: Description
+        :rtype: int
+        """
         self.die_faces: list = []
         for i in range(len(self.die_set)):
             self.die_faces.append(self.die_set[i].get_face())
